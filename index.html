@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+    <title>Desktop</title>
+</head>
+<body>
+    <header>
+        <ul class="menu">
+            <li><span>web</span></li>
+            <li><span>social</span></li>
+            <li><span>games</span></li>
+            <li><span>videos</span></li>
+            <li><span>music</span></li>
+            <li><span>pictures</span></li>
+            <li><span>settings</span></li>
+        </ul>
+    </header>
+
+    <div class="screen">
+        <div class="wrapper">
+            <div class="clock">
+                <span class="time">06:11</span>
+                <span class="ampm">PM</span>
+            </div>
+            <div class="date">
+                <span>July 13</span>
+            </div>
+
+            <div class="newses">
+                <div class="news">
+                    <a href="#">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo molestias recusandae, ad dolore deserunt ducimus, nesciunt officiis ullam modi itaque ea ratione quidem, veritatis obcaecati voluptatibus? Commodi voluptatem molestias sapiente?
+                    </a>
+                </div>
+
+                <div class="news">
+                    <a href="#">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo molestias recusandae, ad dolore deserunt ducimus, nesciunt officiis ullam modi itaque ea ratione quidem, veritatis obcaecati voluptatibus? Commodi voluptatem molestias sapiente?
+                    </a>
+                </div>
+
+                <div class="news">
+                    <a href="#">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo molestias recusandae, ad dolore deserunt ducimus, nesciunt officiis ullam modi itaque ea ratione quidem, veritatis obcaecati voluptatibus? Commodi voluptatem molestias sapiente?
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="apps">
+            <div class="tile four">
+                <div class="tile__inner img">
+                    <img src="/static/images/icons/chrome.png" alt="">
+                </div>
+                <div class="tile__inner img">
+                    <img src="/static/images/icons/firefox.png" alt="">
+                </div>
+                <div class="tile__inner img">
+                    <img src="/static/images/icons/calculator.png" alt="">
+                </div>
+                <div class="tile__inner img">
+                    <img src="/static/images/icons/discord.png" alt="">
+                </div>
+            </div>
+            <div class="tile single">
+                <img src="/static/images/icons/office.png" alt="">
+                <span>Office</span>
+            </div>
+
+            <div class="tile weather clear">
+                <span class="location">Kurla West</span>
+                <span class="temp">27°</span>
+                <span class="condition">Cloudy</span>
+            </div>
+
+            <div class="tile four">
+                <div class="tile__inner char white">
+                    <span>M</span>
+                </div>
+
+                <div class="tile__inner char red">
+                    <span>C</span>
+                </div>
+
+                <div class="tile__inner span-2 char green">
+                    <span>M</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script>
+        var slider = tns({
+            container: '.newses',
+            items: 1,
+            autoplay: false,
+            controls: false,
+            mouseDrag: true,
+            navPosition: 'bottom',
+            preventScrollOnTouch: 'force'
+        });
+    </script>
+</body>
+
+</html>

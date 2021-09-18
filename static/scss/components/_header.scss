@@ -1,0 +1,18 @@
+header {
+    position: fixed;
+    padding-left: 10px;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    .menu {
+        display: flex;
+
+        li {
+            padding: 10px;
+            font-size: 18px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+    }
+}
