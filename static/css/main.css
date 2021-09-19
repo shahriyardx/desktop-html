@@ -123,6 +123,7 @@ header .menu li {
   background: #313131;
   border-radius: 10px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .apps .tile.four {
