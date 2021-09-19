@@ -30,11 +30,26 @@ img {
 
 header {
   position: fixed;
-  padding-left: 10px;
   top: 0;
   left: 0;
   z-index: 98;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .logo {
+  width: 40px;
+  height: 40px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: black;
+  color: white;
+  font-size: 20px;
+  border-radius: 0 0 20px 0;
+  cursor: pointer;
 }
 
 header .menu {
@@ -45,14 +60,53 @@ header .menu {
       flex-wrap: wrap;
 }
 
+header .menu .close {
+  display: none;
+}
+
 @media screen and (max-width: 500px) {
   header .menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.589);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: unset;
-        flex-wrap: unset;
+    padding-top: 40px;
+    -webkit-transition: top .3s ease;
+    transition: top .3s ease;
+  }
+  header .menu.active {
+    top: 0;
+  }
+  header .menu li {
+    text-align: center;
+  }
+  header .menu .close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 20px 0;
+    font-size: 20px;
+    background: black;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
+  header .menu li:hover {
+    width: 100%;
+    background: black;
+    color: white;
   }
 }
 
@@ -61,6 +115,7 @@ header .menu li {
   font-size: 18px;
   font-weight: 400;
   cursor: pointer;
+  text-transform: capitalize;
 }
 
 .screen {
@@ -199,6 +254,7 @@ header .menu li {
     font-size: 20px;
     color: white;
     cursor: pointer;
+    border-radius: 0 0 0 20px;
   }
   .screen .apps .toggler::before {
     content: "\edc2";

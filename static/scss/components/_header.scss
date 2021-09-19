@@ -1,18 +1,67 @@
 header {
     position: fixed;
-    padding-left: 10px;
+
     top: 0;
     left: 0;
     z-index: 98;
     width: 100%;
+    display: flex;
+    
+    .logo {
+        width: 40px;
+        height: 40px;
+        display: grid;
+        place-items: center;
+        background: black;
+        color: white;
+        font-size: 20px;
+        border-radius: 0 0 20px 0;
+        cursor: pointer;
+    }
 
     .menu {
         display: flex;
         flex-wrap: wrap;
 
+        .close {display: none}
+        
         @media screen and (max-width: 500px) {
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.589);
+            align-items: center;
             flex-direction: column;
-            flex-wrap: unset;
+            padding-top: 40px;
+            transition: top .3s ease;
+
+            &.active {top: 0}
+
+            li {
+                text-align: center;
+            }
+
+            .close {
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 0 0 20px 0;
+                font-size: 20px;
+                background: black;
+                color: white;
+                width: 40px;
+                height: 40px;
+                display: grid;
+                place-items: center;
+                cursor: pointer;
+            }
+
+            li:hover {
+                width: 100%;
+                background: black;
+                color: white;
+            }
         }
 
         li {
@@ -20,6 +69,7 @@ header {
             font-size: 18px;
             font-weight: 400;
             cursor: pointer;
+            text-transform: capitalize;
         }
     }
 }
