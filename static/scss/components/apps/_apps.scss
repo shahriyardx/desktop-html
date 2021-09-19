@@ -13,7 +13,7 @@
         border-radius: 10px;
         padding: 10px;
         cursor: pointer;
-        
+
         &.four {
             display: grid;
             grid-template: 1fr 1fr / 1fr 1fr;
@@ -97,38 +97,6 @@
                 justify-content: center;
                 align-items: center;
 
-                &.white {
-                    background: white;
-
-                    span {
-                        color: black;
-                    }
-                }
-
-                &.red {
-                    background: #f14242;
-
-                    span {
-                        color: white;
-                    }
-                }
-
-                &.blue {
-                    background: #5050f1;
-
-                    span {
-                        color: white;
-                    }
-                }
-
-                &.green {
-                    background: #2dd378;
-
-                    span {
-                        color: black;
-                    }
-                }
-
                 span {
                     font-size: 20px;
                     color: #fff;
@@ -136,5 +104,38 @@
                 }
             }
         }
+    }
+}
+
+
+.white {
+    background: white;
+
+    span {
+        color: black;
+    }
+}
+
+.red {
+    background: #f14242;
+
+    span {
+        color: white;
+    }
+}
+
+.blue {
+    background: #5050f1;
+
+    span {
+        color: white;
+    }
+}
+
+.green {
+    background: #2dd378;
+
+    span {
+        color: black;
     }
 }

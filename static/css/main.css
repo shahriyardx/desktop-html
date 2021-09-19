@@ -239,41 +239,41 @@ header .menu li {
           align-items: center;
 }
 
-.apps .tile__inner.char.white {
-  background: white;
-}
-
-.apps .tile__inner.char.white span {
-  color: black;
-}
-
-.apps .tile__inner.char.red {
-  background: #f14242;
-}
-
-.apps .tile__inner.char.red span {
-  color: white;
-}
-
-.apps .tile__inner.char.blue {
-  background: #5050f1;
-}
-
-.apps .tile__inner.char.blue span {
-  color: white;
-}
-
-.apps .tile__inner.char.green {
-  background: #2dd378;
-}
-
-.apps .tile__inner.char.green span {
-  color: black;
-}
-
 .apps .tile__inner.char span {
   font-size: 20px;
   color: #fff;
   text-transform: uppercase;
+}
+
+.white {
+  background: white;
+}
+
+.white span {
+  color: black;
+}
+
+.red {
+  background: #f14242;
+}
+
+.red span {
+  color: white;
+}
+
+.blue {
+  background: #5050f1;
+}
+
+.blue span {
+  color: white;
+}
+
+.green {
+  background: #2dd378;
+}
+
+.green span {
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */
