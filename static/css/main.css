@@ -109,9 +109,21 @@ header .menu li {
 .screen .wrapper .newses .news a {
   color: black;
   font-size: 15px;
+  line-height: 15px;
   font-weight: 300;
   letter-spacing: 0.5px;
   line-height: 22px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#505050), to(#a0a0a0));
+  background-image: linear-gradient(to right, #505050, #a0a0a0);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  -webkit-transition: background-size .3s ease;
+  transition: background-size .3s ease;
+}
+
+.screen .wrapper .newses .news a:hover {
+  background-size: 100% 3px;
 }
 
 .tns-nav {
