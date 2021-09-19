@@ -17,7 +17,7 @@
                     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=05a4361b638235a33d86f51b86f279c2`)
                         .then(response => response.json())
                         .then(data => {
-                            temp = parseInt(data.main.temp)
+                            temp = `${parseInt(data.main.temp)}°`
                             city = data.name
                             condition = data.weather[0].main
                             
