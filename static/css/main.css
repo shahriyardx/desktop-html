@@ -40,6 +40,8 @@ header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 header .menu li {
@@ -73,6 +75,12 @@ header .menu li.toggler {
   bottom: 0;
   max-width: 400px;
   padding: 0 0 20px 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .screen .wrapper {
+    max-width: 100%;
+  }
 }
 
 .screen .wrapper .clock .time {

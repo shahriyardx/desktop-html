@@ -10,6 +10,10 @@
         max-width: 400px;
         padding: 0 0 20px 20px;
 
+        @media screen and (max-width: 400px) {
+            max-width: 100%;
+        }
+
         .clock {
             .time {
                 font-size: 60px;
