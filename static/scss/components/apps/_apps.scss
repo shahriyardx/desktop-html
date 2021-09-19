@@ -6,7 +6,7 @@
     flex-direction: column;
     height: 93%;
     max-width: 260px;
-    transition: all .2s ease;
+    transition: right .2s ease;
 
     .toggler {
         display: none;
@@ -40,7 +40,6 @@
             font-size: 20px;
             color: white;
             cursor: pointer;
-            transition: all .2s ease;
 
             &::before {
                 content: "\edc2";
@@ -62,6 +61,7 @@
             margin-bottom: 0px;
         }
     }
+
     .tile {
         width: 120px;
         height: 120px;
@@ -100,17 +100,9 @@
             display: flex;
             flex-direction: column;
             
-            &.cloudy {
-                background-image: linear-gradient(to bottom right, #7787A0, #C9D3DC);
-            }
-
-            &.clear {
-                background-image: linear-gradient(to bottom right, #3b89bd, #8ac6ee);
-            }
-
-            &.sunny {
-                background-image: linear-gradient(to bottom right, #F9C852, #ffe099);
-            }
+            &.cloudy {background-image: linear-gradient(to bottom right, #7787A0, #C9D3DC)}
+            &.clear {background-image: linear-gradient(to bottom right, #3b89bd, #8ac6ee)}
+            &.sunny {background-image: linear-gradient(to bottom right, #F9C852, #ffe099)}
 
             &.rainy {
                 color: white;
