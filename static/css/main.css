@@ -355,6 +355,23 @@ header .menu li {
   text-transform: uppercase;
 }
 
+.screen .apps .tile__inner.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.screen .apps .tile__inner.icon i {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
 .screen .apps .row-tile {
   display: -ms-grid;
   display: grid;
@@ -409,7 +426,7 @@ header .menu li {
   background: white !important;
 }
 
-.white span {
+.white span, .white i {
   color: black !important;
 }
 
@@ -417,7 +434,7 @@ header .menu li {
   background: #f14242 !important;
 }
 
-.red span {
+.red span, .red i {
   color: white !important;
 }
 
@@ -425,7 +442,7 @@ header .menu li {
   background: #5050f1 !important;
 }
 
-.blue span {
+.blue span, .blue i {
   color: white !important;
 }
 
@@ -433,7 +450,7 @@ header .menu li {
   background: #2dd378 !important;
 }
 
-.green span {
+.green span, .green i {
   color: black !important;
 }
 
