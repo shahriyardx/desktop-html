@@ -44,23 +44,22 @@ header .menu {
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 500px) {
+  header .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: unset;
+        flex-wrap: unset;
+  }
+}
+
 header .menu li {
   padding: 10px;
   font-size: 18px;
   font-weight: 400;
   cursor: pointer;
-}
-
-header .menu li.toggler {
-  margin-left: auto;
-  font-size: 30px;
-  display: none;
-}
-
-@media screen and (max-width: 870px) {
-  header .menu li.toggler {
-    display: block;
-  }
 }
 
 .screen {

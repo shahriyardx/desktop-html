@@ -10,21 +10,16 @@ header {
         display: flex;
         flex-wrap: wrap;
 
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+            flex-wrap: unset;
+        }
+
         li {
             padding: 10px;
             font-size: 18px;
             font-weight: 400;
             cursor: pointer;
-
-            &.toggler {
-                margin-left: auto;
-                font-size: 30px;
-                display: none;
-
-                @media screen and (max-width: 870px) {
-                    display: block;
-                }
-            }
         }
     }
 }
