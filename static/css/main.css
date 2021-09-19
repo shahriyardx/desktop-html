@@ -11,6 +11,7 @@ body {
   background-image: url("/static/images/background/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 ul {
@@ -31,7 +32,8 @@ header {
   padding-left: 10px;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 98;
+  width: 100%;
 }
 
 header .menu {
@@ -45,6 +47,18 @@ header .menu li {
   font-size: 18px;
   font-weight: 400;
   cursor: pointer;
+}
+
+header .menu li.toggler {
+  margin-left: auto;
+  font-size: 30px;
+  display: none;
+}
+
+@media screen and (max-width: 870px) {
+  header .menu li.toggler {
+    display: block;
+  }
 }
 
 .screen {
@@ -122,6 +136,58 @@ header .menu li {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 93%;
+  max-width: 260px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.screen .apps .toggler {
+  display: none;
+}
+
+@media screen and (max-width: 870px) {
+  .screen .apps {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    max-width: 300px;
+    padding: 20px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.596);
+    z-index: 99;
+  }
+  .screen .apps.active {
+    right: 0;
+  }
+  .screen .apps .toggler {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #f14646;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+  }
+  .screen .apps .toggler::before {
+    content: "\edc2";
+  }
+  .screen .apps .toggler.active::before {
+    content: "\eef0";
+  }
 }
 
 .screen .apps__section {
@@ -283,7 +349,7 @@ header .menu li {
   margin-top: auto;
 }
 
-.screen .apps .row-tile .apps {
+.screen .apps .row-tile__apps {
   position: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,18 +363,18 @@ header .menu li {
           justify-content: space-between;
 }
 
-.screen .apps .row-tile .apps .app {
+.screen .apps .row-tile__apps .app {
   width: 45px;
   height: 45px;
   border-radius: 10px;
 }
 
-.screen .apps .row-tile .apps .app.img img {
+.screen .apps .row-tile__apps .app.img img {
   width: 100%;
   height: 100%;
 }
 
-.screen .apps .row-tile .apps .app.char {
+.screen .apps .row-tile__apps .app.char {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

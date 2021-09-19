@@ -3,16 +3,28 @@ header {
     padding-left: 10px;
     top: 0;
     left: 0;
-    z-index: 99;
+    z-index: 98;
+    width: 100%;
 
     .menu {
         display: flex;
+        
 
         li {
             padding: 10px;
             font-size: 18px;
             font-weight: 400;
             cursor: pointer;
+
+            &.toggler {
+                margin-left: auto;
+                font-size: 30px;
+                display: none;
+
+                @media screen and (max-width: 870px) {
+                    display: block;
+                }
+            }
         }
     }
 }

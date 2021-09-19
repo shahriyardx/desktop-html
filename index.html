@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/main.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+    <link rel="stylesheet" href="/static/css/main.css">
 
     <meta name="keywords" content="desktop ui, minimal desktop ui, html css desktop ui">
     <meta name="title" content="HTML Desktop" />
@@ -73,7 +74,8 @@
             </div>
         </div>
 
-        <div class="apps">
+        <div class="apps ">
+            <i class='bx bx-x toggler'></i>
             <div class="apps__section">
                 <div class="tile four">
                     <div class="tile__inner img">
@@ -119,7 +121,7 @@
             
             <div class="apps__section" style="margin-top: auto;">
                 <div class="row-tile col-span-2">
-                    <div class="apps">
+                    <div class="row-tile__apps">
                         <div class="app img">
                             <img src="/static/images/icons/chrome.png" alt="">
                         </div>
@@ -129,7 +131,7 @@
                         </div>
                     </div>
                     
-                    <div class="apps">
+                    <div class="row-tile__apps">
                         <div class="app char green">
                             <span>M</span>
                         </div>
@@ -144,6 +146,7 @@
         </div>
     </div>
     
+    <script src="/static/scripts/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script>
         var slider = tns({
