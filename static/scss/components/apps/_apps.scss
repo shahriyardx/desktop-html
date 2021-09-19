@@ -1,4 +1,4 @@
-.apps {
+.screen .apps {
     position: absolute;
     top: 60px;
     right: 50px;
@@ -78,6 +78,11 @@
             height: 45px;
             border-radius: 10px;
 
+            // &.col-span-2 {
+            //     grid-column: span 2 !important;
+            //     width: 100% !important;
+            // }
+
             &.img {
                 img {
                     width: 90%;
@@ -85,11 +90,6 @@
                     object-fit: cover;
                     border-radius: 10px;
                 }
-            }
-
-            &.span-2 {
-                width: 100%;
-                grid-column: span 2;
             }
 
             &.char {
@@ -105,37 +105,78 @@
             }
         }
     }
+
+    .row-tile {
+        display: grid;
+        grid-template: 1fr / 1fr 1fr;
+        width: 100%;
+        height: 45px;
+        gap: 20px;
+
+        .apps {
+            position: inherit;
+            display: flex;
+            justify-content: space-between;
+
+            .app {
+                width: 45px;
+                height: 45px;
+                border-radius: 10px;
+    
+                &.img img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &.char {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
 }
 
 
 .white {
-    background: white;
+    background: white !important;
 
     span {
-        color: black;
+        color: black !important;
     }
 }
 
 .red {
-    background: #f14242;
+    background: #f14242 !important;
 
     span {
-        color: white;
+        color: white !important;
     }
 }
 
 .blue {
-    background: #5050f1;
+    background: #5050f1 !important;
 
     span {
-        color: white;
+        color: white !important;
     }
 }
 
 .green {
-    background: #2dd378;
+    background: #2dd378 !important;
 
     span {
-        color: black;
+        color: black !important;
     }
+}
+
+.col-span-2 {
+    grid-column: span 2;
+    width: 100% !important;
+}
+
+.row-span-2 {
+    grid-row: span 2;
+    height: 100%  !important;
 }
