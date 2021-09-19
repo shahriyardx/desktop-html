@@ -391,6 +391,7 @@ header .menu li {
 .screen .apps .row-tile__apps .app.img img {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 
 .screen .apps .row-tile__apps .app.char {
