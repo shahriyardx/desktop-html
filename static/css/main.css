@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: url("/static/images/background/bg2.jpg");
+  background-image: url("static/images/background/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
